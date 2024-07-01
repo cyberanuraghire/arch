@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top:0px;
+    background-color: #fff;
+    
+}
+img{
+    
+    width: 25px;
+}
+header{
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding-top:20px;
+    padding-bottom:20px;
+    /* padding-left:1px;
+    padding-right:1px; */
+    background-color: #000000;
+}
+header .logo{
+    padding-left:40px;
+    position: relative;
+    width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:30px;/* moved the ul content to left side  */
+}
+
+header ul li{
+   padding: 0 20px; /*space between the ions*/
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    color: #ffffff;
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+header ul li a::after{
+    line-height: 1;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+header ul li a:hover::after{
+    width:100% ;
+}
+.architect{
+    margin-top: 90px;
+    width: 100%;
+    height: 450px;
+    background-color: #000000;
+    border: 1px solid red;
+    display: flex;
+    color:white;
+}
+.arch-left{
+    flex-basis: 40%;
+    /* border: 1px solid rgb(45, 212, 19); */
+    padding-top:90px;
+    margin-left: 20px;
+
+}
+.arch-right{
+    border-left: 2px solid rgb(255, 255, 255) ;
+    padding-top:150px;
+  margin-left: 150px;
+  padding-left: 70px;
+    flex-basis: 40%;
+    /* border: 1px solid rgb(48, 17, 187); */
+}
